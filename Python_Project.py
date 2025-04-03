@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")
 
 st.title('Adam Idrissi')
 content = """
-Hello I am Adam Idrissi. I just started learning how to code in Python and I am currently 13 years old in 8th grade.
+Hello I am Adam Idrissi. I just started learning how to code in Python and I am 13 years old.
 """
 st.info(content)
 
