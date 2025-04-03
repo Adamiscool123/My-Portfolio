@@ -7,7 +7,7 @@ with st.form(key='email_form'):
     user_email = st.text_input('Your email address')
     text_message = st.text_area('Your message')
     message = f"""\
-Subject; New email from {user_email}
+Subject: New email from {user_email}
 From: {user_email}
 {text_message}
 
