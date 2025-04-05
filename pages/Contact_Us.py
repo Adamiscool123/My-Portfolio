@@ -12,7 +12,6 @@ From: {user_email}
 {text_message}
 
 """
-
     button = st.form_submit_button('Submit')
     if button:
         send_email(message, user_email)

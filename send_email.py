@@ -1,6 +1,7 @@
 import os
 import smtplib, ssl
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
 def send_email(message, email, password=os.getenv("PASSWORD")):
@@ -11,4 +12,7 @@ def send_email(message, email, password=os.getenv("PASSWORD")):
     with smtplib.SMTP_SSL(host, port, context=context) as server:
         server.login(receiver, password)
         server.sendmail(email, receiver, message)
+
+    st.write("Debugging Variables:")
+    st.json({"Passy" : password})
 
