@@ -15,6 +15,5 @@ From: {user_email}
     button = st.form_submit_button('Submit')
     if button:
         send_email(message, user_email)
-        st.info("Your email has been sent successfuly")
-        st.write("Debugging Variables:")
+
 
