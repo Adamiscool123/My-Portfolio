@@ -3,8 +3,7 @@ import smtplib, ssl
 from dotenv import load_dotenv
 
 load_dotenv()
-password = os.getenv("PASSWORD")
-def send_email(message, email):
+def send_email(message, email, password=os.getenv("PASSWORD")):
     host = "smtp.gmail.com"
     port = 465
     receiver = 'adamidrissi177@gmail.com'
